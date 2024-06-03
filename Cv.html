@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <link href="Projet_style.css" rel="stylesheet" />
+      <title>My experiences</title>
+  </head>
+  <body>
+    <a href="Portfolio.html"><img src="Images/homes-removebg-preview.png" alt="img" ></a>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider"></span>
+      </label>
+  </div>
+    <script>
+      const themeSwitch = document.getElementById('theme-switch');
+      const currentTheme = localStorage.getItem('theme');
+    
+      if (currentTheme) {
+        document.body.classList.add(currentTheme);
+    
+        if (currentTheme === 'dark') {
+          themeSwitch.checked = true;
+        }
+      }
+    
+      themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+          document.body.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.body.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    </script>
+    <div>
+      <h1>BENKHEIRA Lilya</h1>
+      <h2>09/03/2005</h2>
+        <h2>DIPLOMA :</h2>
+        <h3>2020 :</h3>
+        <ul>
+            <li>Brevet with honors
+            (Georges Pompidou Middle School)</li>
+        </ul>
+        <h3>2022-2023 :</h3>
+        <ul>
+            <li>Baccalaureate with distinction (Vaucanson High School)</li>
+        </ul>
+    </div>
+    <div>
+      <h2>EDUCATION :</h2>
+      <h3>2019 :</h3>
+      <h3>Internship :</h3>
+      <ul>
+        <li>Subatomic & Cosmological Physics Laboratory.</li>
+      </ul>
+      <h3>2019-2023 :</h3> 
+      <ul>
+        <li>Vaucanson High School: General track with options in Digital Sciences and Computer Science, Mathematics, and Engineering Sciences (10th & 11th grade).</li>
+      </ul>
+      <h3>Current Education :</h3>
+      <ul>  
+        <li>Bachelor in computer sciences at UGA.</li>
+      </ul>
+    </div>
+    <div> 
+      <h2>PROFESSIONAL EXPERIENCE :</h2>
+      <h3>August 2023 :</h3>
+      <ul>
+        <li>Cashier at a supermarket (Leclerc).</li>
+      </ul>
+    </div> 
+    <div>
+      <h2>CERTIFICATION :</h2>
+      <ul>
+            <li>PSC1</li>
+            <li>PIX</li>
+      </ul>
+      <h2>SKILLS :</h2>
+      <ul>
+          <li>English B2</li>
+          <li>Spanish A2</li>
+      </ul>
+      <h3>Computer Skills :</h3>
+      <ul>
+          <li>MS Office</li>
+          <li>Social Media</li>
+          <li>Programming (Java, Python)</li>
+          <li>SQL</li>
+          <li>Web (HTML, CSS)</li>
+      </ul>
+  </div>
+  <div> 
+    <footer>
+      <a><img src="Images/mail.png" alt="gmail"><p> feryal0903@gmail.com</p></a>
+      <a href="https://www.linkedin.com/in/lilya-benkheira-882258265/"><img src="Images/linkedin_logo_icon.png" alt="link"><p> Lilya Benkheira</p></a>
+      <a><img src="Images/tel.png" alt="tel"><p> +33766521820</p></a>
+    </footer>
+  </div>
+  </body>
+</html>  

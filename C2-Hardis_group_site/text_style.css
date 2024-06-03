@@ -1,0 +1,233 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-color: #363636;
+    color: white;
+    font-size: 150%;
+}
+
+body h2{
+    background-image: url("fond_h2.jpg");
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    font-weight:600;
+}
+body h1{
+    padding-top: 8%;
+    border-bottom: #227422 solid 2px ;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    margin: 0px;
+}
+body article{
+    width: 90%;
+    margin: auto;
+    text-indent:5.5%;
+    
+}
+body article ul li{
+    text-indent: 0%;
+}
+
+body article section{
+    text-indent: 0%;
+    padding-left: 5%;
+}
+nav{
+    display: flex;
+    background-color: rgb(39,32,32);
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+}  
+nav form{
+    display: flex;
+    justify-content: end;
+}
+nav form input{
+    height: 35px;
+}
+nav form button{
+    height: 37px;
+    width: 30px;
+    padding: 0px;
+}
+nav form button img{
+    height: 37px;
+    width: 30px;
+    padding: 0px;
+}
+
+
+  
+nav form input[type=text] {
+    margin-top: 12px;
+    font-size: 17px;
+    border: none;
+}
+nav form button {
+    float: right;
+    margin-top: 12px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+nav form button:hover {
+    background: #ccc;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+}
+
+nav ul li a {
+    background-color: rgb(39,32,32);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px;
+    border-radius: 0px;
+    font-size: 0.8em ;
+
+}
+nav ul li a:hover {
+    background-color: #227422;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+nav img{
+    width: 90px; 
+    height: 45px; 
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+}
+nav ul::after{
+    display: table;
+    clear: both;
+}
+.deroulant{
+    padding: 0px;
+}
+.sous{
+    display: none;
+    position: absolute;
+    width: 500px;
+}
+nav > ul li:hover .sous{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+.sous li{
+    width: 300px;
+    text-align: left;
+
+}
+.sous a{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0px;
+
+}
+.sous a:hover{
+    padding: 10px;
+}
+.deroulant > a::after{
+    content: "▼";
+}
+
+.sous a:hover{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0px;
+}
+footer{
+    background-color:rgb(39, 32, 32);
+    color: white;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    
+}
+footer article{
+    width: 500px;
+    height: 187px;
+}
+footer article aside{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+
+}
+footer article img{
+    background: color #080808;
+    /*box-shadow: 5px 5px 5px 5px #227422;*/
+    width: 65px;
+    height: 65px;
+    margin-left:10px ;
+    margin-right:10px ;
+}
+footer article p{
+    margin-left: 15%;
+   
+}
+footer article p a{
+    color: #227422;
+}
+footer section ul {
+    list-style-type: none;
+}
+
+footer section ul li a:hover{
+    color:#227422
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    align-items: end;
+    gap: 25px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+footer section ul{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size:150%;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left: #227422 solid 3px;
+}
+footer section ul li a{
+    color: white;
+    text-decoration: none;
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="Projet_style.css" rel="stylesheet" />
+    <title>Learn more about me</title>
+</head>
+<body>
+    <a href="Portfolio.html"><img src="Images/homes-removebg-preview.png" alt="img" ></a>
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch">
+          <span class="slider"></span>
+        </label>
+    </div>
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        const currentTheme = localStorage.getItem('theme');
+      
+        if (currentTheme) {
+          document.body.classList.add(currentTheme);
+      
+          if (currentTheme === 'dark') {
+            themeSwitch.checked = true;
+          }
+        }
+      
+        themeSwitch.addEventListener('change', function() {
+          if (this.checked) {
+            document.body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      </script>
+     
+    <div>     
+        <h1>HOBBIES :</h1>
+        <h2>Sports :</h2>
+        <ul>
+            <li>6 years of ballet</li>
+            <li>2 years of handball
+            <li>Currently practicing climbing (2 years) and I did a little quiz on it.</li>
+        </ul>
+        <p><button><a href="Escalade/Escalade.html">See more</a></button></p>
+        <h2>Other interest:</h2>
+        <ul>
+          <li>Reading (My personnal favorite author is Terry Pratchett and my Proust madeleine is Roald Dahl)</li>
+          <li>Drawing</li>
+          <li>Fashion</li>
+        </ul>
+    </div>
+    <div>
+      <footer>
+          <a><img src="Images/mail.png" alt="gmail"><p> feryal0903@gmail.com</p></a>
+          <a href="https://www.linkedin.com/in/lilya-benkheira-882258265/"><img src="Images/linkedin_logo_icon.png" alt="link"><p> Lilya Benkheira</p></a>
+          <a><img src="Images/tel.png" alt="tel"><p> +33766521820</p></a>
+      </footer>
+    </div>
+</body>
+</html>

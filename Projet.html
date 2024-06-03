@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="Projet_style.css" rel="stylesheet" />
+    
+    <title>Project</title>
+</head>
+<body>
+    <a href="Portfolio.html"><img src="Images/homes-removebg-preview.png" alt="img" ></a>
+    <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-switch">
+          <span class="slider"></span>
+        </label>
+    </div>
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        const currentTheme = localStorage.getItem('theme');
+      
+        if (currentTheme) {
+          document.body.classList.add(currentTheme);
+      
+          if (currentTheme === 'dark') {
+            themeSwitch.checked = true;
+          }
+        }
+      
+        themeSwitch.addEventListener('change', function() {
+          if (this.checked) {
+            document.body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      </script>
+    <nav>
+        <div class="dropdown">
+            <button class="mainmenubtn">Menu</button>
+            <div class="dropdown-child">
+                <a href="#un">Installation of a workstation for development (2023-2024)</a>
+                <a href="#deux">Needs Assessment / Discovery of the Economic and Ecological Environment (2023-2024)</a>
+                <a href="#trois">Database Creation (2023-2024)</a>
+                <a href="#quatre">Customer Requirement Implementation / Algorithmic Approach Comparison (2023-2024)</a>
+            </div>
+        </div>
+    </nav>
+    <div class="un" id="un">
+        <h1>Installation of a workstation for development (2023-2024)</h1>
+        <p>This task involves installing Debian 12 on a virtual machine and then installing several software packages and performing various technical tasks under Debian 12 with the KDE/Plasma environment. Here's what I learned:<br>
+                <ol>
+                <li> Installing Software on Debian : I learned how to install software on Debian using Debian packages, downloading archives, and using package managers like `apt`.</li>
+                
+                <li> Verifying File Integrity : I learned the importance of verifying the integrity of downloaded files by comparing SHA-512 checksums to ensure they have not been altered or corrupted.</li>
+                
+                <li> User Environment Configuration : I learned how to configure user settings such as login name, language, and localization during the operating system installation.</li>
+                
+                <li> Using sudo : I learned to use the `sudo` command to execute commands as the root user or with elevated privileges.</li>
+                
+                <li> Installing and Verifying Software : I learned to install and verify software such as Git, JDK, and IntelliJ IDEA Community using different installation methods, such as Debian packages, Snap, and Flatpak.</li>
+                
+                <li> Screen Capture and File Management : I learned how to efficiently capture screens, focusing on relevant elements, and manage files by individually downloading them to an e-learning platform.</li>
+                </ol>
+            This assessment is valuable as it covers several important aspects of system administration and software development, such as software installation, development environment configuration, and package management.<br>
+            
+            The development skills required to succeed in this assessment include:<br>
+            
+            - Understanding of operating systems and their installation.<br>
+            - Proficiency in Linux command line and system commands.<br>
+            - Knowledge of package management tools such as `apt`, `snap`, and `flatpak`.<br>
+            - Ability to verify file integrity using SHA-512 checksums.<br>
+            - Screen capture and file management skills.<br>
+            - Basic knowledge in system administration and software development.<br>
+        </p>
+        <img src="Images/Capture01.png" alt="img">
+        <img src="Images/Capture01.png" alt="img">
+        <img src="Images/Capture02.png" alt="img">
+        <img src="Images/Capture03.png" alt="img">
+        <img src="Images/Capture04.png" alt="img">
+        <img src="Images/Capture05.png" alt="img">
+        <img src="Images/Capture06.png" alt="img">
+        <img src="Images/Capture07.png" alt="img">
+        <img src="Images/Capture08.png" alt="img">
+        <img src="Images/Capture09.png" alt="img">
+        <img src="Images/Capture10.png" alt="img">
+    </div>
+    <div class="deux" id="deux">
+        <h1>Needs Assessment / Discovery of the Economic and Ecological Environment (2023-2024)</h1>
+        <p>First, we conducted a needs assessment by gathering information about the Hardis Group company and reflecting on its digital and ecological transition. 
+            Then, we designed a website mockup based on the gathered information, which we subsequently implemented in HTML/CSS to create the final website.<br>
+            <br>
+            This experience taught us to work effectively in a team by dividing tasks according to our skills and availability.<br> 
+            We also developed our communication, project management, and web development skills.
+            <br>
+            This assessment was interesting because it allowed us to apply the knowledge acquired in class in a simulated professional context. 
+            It also raised awareness about the importance of digital and ecological transition for companies in the digital sector.<br>
+            <br>
+            Finally, we were asked to adopt a reflective attitude and evaluate the project. We reflected on the difficulties encountered, the strategies implemented, the skills acquired, and the overall project experience.<br>
+            <br>
+            This assessment is particularly relevant in the field of computer science because it allowed us to develop technical skills in web development while raising awareness of the environmental and societal issues related to digital transition.<br>
+            <button><a href="C2-Hardis_group_site/header.html">See more</a></button>
+        </p>
+    
+    </div>
+    <div class="trois" id="trois">
+        <h1>Database Creation (2023-2024)</h1>
+        <p>This assessment consists of several steps aimed at modeling a database (DB) representing the Titanic disaster, justifying this modeling, implementing it under PostgreSQL, performing compliance tests, and conducting queries to analyze the data in pairs or groups of three.<br>
+            <br>
+            This assessment has taught me how to design an entity-relationship schema (ER) from raw data, translate it into a coherent relational schema (RS), implement it in a database management system (DBMS) like PostgreSQL, write SQL queries to query the database, and perform compliance tests to verify data integrity.<br>
+            <br>
+            This assessment is interesting because it simulates a real case where skills in data modeling, database implementation, and querying are required. It allows for the practical application of theoretical knowledge acquired in class and the development of essential practical skills in the field of computer science.<br>
+            <br>
+            This assessment helps develop these skills by providing hands-on experience in designing, implementing, and managing databases, which is crucial in many computer science fields such as software development, data analysis, machine learning, etc.<br>
+            <br>
+            This assessment has allowed me to use my skills in data modeling, SQL writing, database management, as well as analysis and interpretation of results. It has also taught me the importance of rigor and precision in data manipulation.<br>
+            <br>
+            You can downloadthe sql files down here.<br>
+            <img src="Images/SEA.png" alt="img">
+            <img src="Images/SLR.png" alt="img"><br>
+            <button><a href="Sql.zip" download="Sql">Download</a></button><br>
+            
+        </p>
+    </div>
+    <div class="quatre" id="quatre">
+        <h1>Customer Requirement Implementation / Algorithmic Approach Comparison (2023-2024)</h1>
+        <p>This evaluation allowed me to work in pairs on a project for the automatic classification of news articles into five different categories (environment-science, culture, economy, politics, sports). The project was divided into two main parts.<br>
+            <br>
+            In the first part, I had to manually construct lexicons for each category based on a hundred example news articles provided. Then, I developed a program that calculated a score for each category for each news article based on the words present in the lexicons and assigned each news article to the category with the maximum score.<br>
+            <br>
+            The second part of the project involved automating the construction of lexicons by developing a machine learning method. I had to analyze the file 'depeches.txt' to extract the most representative words for each category by calculating a score for each word based on its frequency in the category and specificity. These scores were then used to automatically generate the lexicons.<br>
+            <br>
+            This project allowed me to acquire several important skills in computer science, including:<br>
+            <br>
+                <ol>
+                    <li> Programming: I developed Java programs to process and analyze textual data, calculate scores, and perform automatic classifications.</li>
+                    <li> Data processing: I learned to read and analyze text files containing news articles, extract relevant information, and use it to build lexicons.</li>
+                    <li> Machine learning: In the second part of the project, I explored machine learning concepts by developing a method to automatically generate lexicons from training data.</li>
+                    <li> Performance evaluation: I evaluated the performance of my classification system by comparing the results obtained with manually and automatically constructed lexicons.</li>
+                </ol><br>
+            This project was interesting in a computer science context because it combined aspects of programming, data processing, and machine learning, which reflect many real-world scenarios in the field of computer science, such as document classification, sentiment analysis, and content recommendation.<br>
+            <br>
+            The skills I developed in this project, such as programming, data processing, and machine learning, are highly sought after in various fields of computer science, including artificial intelligence, data analysis, software development, and many more.<br>
+        </p>
+    </div>
+    <div>
+        <footer>
+            <a><img src="Images/mail.png" alt="gmail"><p> feryal0903@gmail.com</p></a>
+            <a href="https://www.linkedin.com/in/lilya-benkheira-882258265/"><img src="Images/linkedin_logo_icon.png" alt="link"><p> Lilya Benkheira</p></a>
+            <a><img src="Images/tel.png" alt="tel"><p> +33766521820</p></a>
+        </footer>
+    </div>
+</body>
+</html>

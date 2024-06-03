@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <link href="Projet_style.css" rel="stylesheet" />
+      <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        const currentTheme = localStorage.getItem('theme');
+      
+        if (currentTheme) {
+          document.body.classList.add(currentTheme);
+      
+          if (currentTheme === 'dark') {
+            themeSwitch.checked = true;
+          }
+        }
+      
+        themeSwitch.addEventListener('change', function() {
+          if (this.checked) {
+            document.body.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.body.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      </script>
+      <div>
+      <h1>Benkheira Lilya</h1>
+      <h2>Student in a bachelor in computer sciences </h2></div>
+      <div class="container">
+        <div>
+          <a href="En_savoir_plus.html"><div class="content">
+            <h2>Learn more about me</h2>
+            <span>Who am I? What can I do?</span>
+          </div></a>
+        </div>
+        <div>
+          <a href="Projet.html"><div class="content" >
+            <h2>My projects</h2>
+            <span>Sae, Odless...</span>
+          </div></a>
+        </div>
+        <div>
+          <a href="Cv.html"><div class="content">
+            <h2>Resume</h2>
+            <span>My experiences</span>
+          </div>
+        </div></a>
+      </div>
+      <!--<div class="container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+          <label class="card" for="item-1" id="s-1">
+            <img src="Images/24.png" alt="img">
+          </label>
+          <label class="card" for="item-2" id="s-2">
+            <img src="Images/14.png" alt="img">
+          </label>
+          <label class="card" for="item-3" id="s-3">
+            <img src="Images/19.png" alt="img">
+          </label>
+        </div>
+        <div class="infos">
+          <div class="upper-part">
+            <div class="info-area" id="test">
+              <label class="info" id="info-1">
+                <div class="title"><a href="En_savoir_plus.html"> Learn more about me </a></div>
+                <div class="sub-line">
+                  <div class="subtitle">Who am I? What can I do?</div>
+                </div>
+              </label>
+              <label class="info" id="info-2">
+                <div class="title"><a href="Projet.html"> My projects </a></div>
+                <div class="sub-line">
+                  <div class="subtitle">Sae, Odless...</div>
+                </div>
+              </label>
+              <label class="info" id="info-3">
+                <div class="title"><a href="Cv.html">Resume </a></div>
+                <div class="sub-line">
+                  <div class="subtitle">My experiences</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div>
+        <footer>
+          <a><img src="Images/mail.png" alt="gmail"><p> feryal0903@gmail.com</p></a>
+          <a href="https://www.linkedin.com/in/lilya-benkheira-882258265/"><img src="Images/linkedin_logo_icon.png" alt="link"><p> Lilya Benkheira</p></a>
+          <a><img src="Images/tel.png" alt="tel"><p> +33766521820</p></a>
+        </footer>
+      </div>
+  </body>
+</html>
