@@ -67,11 +67,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.theme-toggle {
-  /*position: fixed;*/
-  top: 1rem;
-  right: 1rem;
-}
+
 
 .switch {
   position: relative;
