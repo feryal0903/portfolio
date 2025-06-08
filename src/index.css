@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,135 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* Éléments de base */
+button, .btn {
+  font-family: 'Shrikhand', cursive, sans-serif;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #D7462B 40%, #F77831 100%); /* Rouge orangé à Orange vif */
+  color: #F2D2A4; /* Beige clair pour texte */
+  border: none;
+  border-radius: 40px;
+  padding: 0.7rem 2.2rem;
+  margin: 1rem 0.5rem;
+  box-shadow: 0 4px 16px rgba(215, 70, 43, 0.4);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(45deg, #F77831 40%, #FDB05B 100%); /* Orange vif à Orange clair */
+  transform: scale(1.05) rotate(-2deg);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Shrikhand', cursive, sans-serif;
+  color: #A22520; /* Rouge foncé */
+  text-shadow: 1px 1px 0 #FCD39E; /* Ombre beige orangé clair */
+  letter-spacing: 1px;
+}
+
+.card {
+  background: #F2D2A4; /* Beige clair */
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(215, 70, 43, 0.25); /* Rouge orangé */
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border: 4px solid #FDB05B; /* Orange clair */
+}
+
+body {
+  background: linear-gradient(135deg, #F2D2A4 0%, #C9A875 100%); /* Beige clair à Beige foncé */
+  font-family: 'Shrikhand', cursive, sans-serif;
+  color: #845022; /* Marron moyen */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+  padding: 0;
+}
+
+.header {
+  background: rgba(242, 210, 164, 0.85); /* Beige clair */
+  border-bottom: 4px solid #D7462B; /* Rouge orangé */
+  box-shadow: 0 8px 32px rgba(215, 70, 43, 0.15);
+  border-radius: 0 0 40px 40px;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  max-width: 600px;
+  padding: 1rem 2rem 0.5rem 2rem;
+  justify-content: center;
+}
+
+.nav-categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.nav-link {
+  color: #D88B1C; /* Orange doré */
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #F3B03E, 2px 2px 0 #845022; /* Jaune orangé et Marron moyen */
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  transition: color 0.2s, text-shadow 0.2s;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+}
+
+.nav-link.active-category,
+.nav-link.active {
+  color: #A22520; /* Rouge foncé */
+  text-shadow: 1px 1px 0 #FCD39E, 2px 2px 0 #845022; /* Beige orangé clair et Marron moyen */
+}
+
+.nav-link.active-category::after,
+.nav-link.active::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #A22520; /* Rouge foncé */
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-categories {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
