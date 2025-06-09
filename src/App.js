@@ -4,15 +4,14 @@ import Accueil from "./pages/Accueil";
 import APropos from "./pages/APropos";
 import CV from "./pages/CV";
 import Projets from "./pages/Projets";
-import Contact from "./pages/Contact";
 import React from "react";
 import Footer from "./components/Footer";
-import "./App.css"; // Assurez-vous d'importer le CSS
+import "./App.css";
 import Decoration from "./components/Decoration";
 
 function App() {
   return (
-    <Router>
+    <Router >
       <div className="app-container">
         <Decoration />
         <Header />
@@ -22,8 +21,10 @@ function App() {
             <Route path="/projets" element={<Projets />} />
             <Route path="/a-propos" element={<APropos />} />
             <Route path="/cv" element={<CV />} />
+            <Route path="*" element={<Accueil />} /> {/* Redirection par défaut */}
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
