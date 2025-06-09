@@ -142,3 +142,280 @@ body {
   justify-content: center;
   gap: 2rem;
 }
+/* Styles pour la page CV - MISE À JOUR */
+.cv-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.cv-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(242, 210, 164, 0.95); /* Beige clair avec légère transparence */
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(215, 70, 43, 0.25); /* Rouge orangé */
+  border: 4px solid #FCD39E; /* Beige orangé clair */
+  position: relative;
+  z-index: 1;
+}
+
+.cv-content header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.cv-content h1 {
+  font-size: 2.8rem;
+  color: #A22520; /* Rouge foncé */
+  text-shadow: 1px 1px 0 #FCD39E; /* Ombre beige orangé clair */
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.cv-content h2 {
+  font-size: 1.2rem;
+  color: #5E6A3F; /* Vert terne moyen */
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.cv-content h3 {
+  color: #D7462B; /* Rouge orangé */
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F77831; /* Orange vif */
+  text-shadow: 1px 1px 0 #FCD39E; /* Ombre beige orangé clair */
+}
+
+.cv-content h4 {
+  color: #845022; /* Marron moyen */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.download-button {
+  position: relative;
+  top: auto;
+  right: auto;
+  background: linear-gradient(45deg, #D7462B 40%, #F77831 100%); /* Rouge orangé à Orange vif */
+  color: #F2D2A4; /* Beige clair pour texte */
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(215, 70, 43, 0.4);
+  font-family: 'Shrikhand', cursive, sans-serif;
+  margin: 0.5rem auto;
+}
+
+.download-button:hover {
+  background: linear-gradient(45deg, #F77831 40%, #FDB05B 100%); /* Orange vif à Orange clair */
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 5px 12px rgba(215, 70, 43, 0.5);
+}
+
+/* Section contact */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 2px solid #FCD39E; /* Beige orangé clair */
+}
+
+.contact-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item i {
+  margin-right: 0.5rem;
+  color: #D7462B; /* Rouge orangé */
+  width: 20px;
+  text-align: center;
+}
+
+.contact-item a {
+  color: #845022; /* Marron moyen */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #D7462B; /* Rouge orangé */
+}
+
+/* Compétences */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #FCD39E; /* Beige orangé clair */
+}
+
+.skill-category h4 {
+  margin-top: 0;
+  color: #D7462B; /* Rouge orangé */
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.skill-category li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category li::before {
+  content: "•";
+  color: #F77831; /* Orange vif */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Timeline (Formation et Expériences) */
+.timeline-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-date {
+  flex: 0 0 150px;
+  font-weight: 600;
+  color: #D7462B; /* Rouge orangé */
+  padding-right: 1rem;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 1.5rem;
+  border-left: 2px solid #F77831; /* Orange vif */
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #D7462B; /* Rouge orangé */
+  border-radius: 50%;
+  left: -7px;
+  top: 6px;
+}
+
+/* Projets */
+.project-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #FCD39E; /* Beige orangé clair */
+}
+
+.project-item h4 {
+  margin-top: 0;
+  color: #D7462B; /* Rouge orangé */
+}
+
+/* Centres d'intérêt */
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.interest-item {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid #FCD39E; /* Beige orangé clair */
+}
+
+.interest-item:hover {
+  background-color: #FCD39E; /* Beige orangé clair */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.interest-item i {
+  margin-right: 0.5rem;
+  color: #D7462B; /* Rouge orangé */
+}
+
+/* Style pour la section Savoir-être */
+.skill-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  margin: 0;
+  transition: all 0.3s ease;
+  border: 2px solid #FCD39E; /* Beige orangé clair */
+}
+
+.skill-item:hover {
+  background-color: #FCD39E; /* Beige orangé clair */
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.skill-item i {
+  margin-right: 0.5rem;
+  color: #D7462B; /* Rouge orangé */
+}
+
+/* Correction spécifique des icônes alternées */
+.skill-item:nth-child(even) i {
+  color: #F77831; /* Orange vif */
+}
+
+/* Animation pour la décoration */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+}
+.savoir-etre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}

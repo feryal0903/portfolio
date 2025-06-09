@@ -7,7 +7,6 @@ const categories = [
   { name: "Projets", path: "/projets" },
   { name: "CV", path: "/cv" },
   { name: "À propos", path: "/a-propos" },
-  { name: "Contact", path: "/contact" },
 ];
 
 export default function Header() {

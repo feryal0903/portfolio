@@ -4,23 +4,60 @@ import { ProjectCard } from '../components/ContentBox';
 function Projets() {
   const projetsList = [
     {
-      title: "Site Portfolio Vintage",
-      description: "Un site portfolio avec une esthétique années 70, utilisant React et des designs inspirés de motifs floraux vintage. J'ai créé des animations douces pour les papillons et les éléments soleil qui décorent la page.",
-      imageUrl: "/images/projet-portfolio.jpg", // Remplacez par le chemin réel
-      tags: ["React", "CSS", "Design Vintage"]
+        title: "Infrastructure réseau virtualisée et sécurisée – SAÉ 4.Deploi.01 (2024-2025)",
+        description: "Nous avons conçu et mis en place une infrastructure réseau virtualisée intégrant de nombreux services. L’environnement repose sur la segmentation en VLAN, l’isolation des services, la sécurisation des accès et la supervision active du réseau. Nous avons intégré et configuré des services tels que LDAP, Kerberos, NFS, CAS, IPAM (NetBox), ainsi qu’un système de supervision (Zabbix) et de journalisation centralisée. Les services ont été déployés sur des machines virtuelles Debian à l’aide de scripts d’automatisation (bash). Pour la sécurité : authentification par clé SSH, filtrage réseau strict et application des mises à jour. Nous avons produit de la documentation et des tests.",
+        imageUrl: "/images/projet-infra-reseau.jpg", 
+        tags: ["Virtualisation", "LDAP", "IPAM", "Journalisation", "Travail en équipe", "Proxmox"]
+      },      
+    {
+        title: "Application web de valorisation du patrimoine culturel (2024-2025)",
+        description: "Nous avons conçu et développé une application web visant à mettre en valeur les sites patrimoniaux remarquables situés en Isère. L’application offre des fonctionnalités clés : fiches détaillées sur les sites (description, localisation, accessibilité), système de recommandations personnalisées basé sur un questionnaire utilisateur, et module de réservation de guides locaux. Elle s’appuie sur une architecture client-serveur : un frontend en React, un backend en Laravel, et une base de données PostgreSQL. Le déploiement a été automatisé via des scripts shell, avec une gestion de projet et de version basée sur GitLab. ",
+        imageUrl: "/images/projet-patrimoine-isere.jpg", 
+        tags: ["React", "Laravel", "PostgreSQL", "Shell", "Déploiement", "GitLab", "Client-Serveur"]
+      },
+      
+    {
+        title: "Application de gestion d’événements sportifs – Vollevent (2024)",
+        description: "Vollevent est une application de bureau dédiée à la gestion de tournois de volley-ball, développée en trois semaines par une équipe de six personnes. L’application, construite avec Java et JavaFX selon une architecture MVC, permet une gestion des tournois, des équipes et des résultats. Nous avons conçu une interface utilisateur à partir de personas et de maquettes, en appliquant des principes ergonomiques (bastien et scapin).",
+        imageUrl: "/images/projet-vollevent.jpg", 
+        tags: ["Java", "JavaFX", "Architecture MVC", "Gestion de projet"]
+      },      
+    {
+        title: "Analyse de données nutritionnelles et visualisation avec R (2024)",
+        description: "Ce projet consistait à modéliser et implémenter une base de données dans PostgreSQL, à effectuer des tests de conformité, puis à analyser, filtrer et nettoyer des données nutritionnelles brutes. Après traitement, nous avons utilisé R pour visualiser et analyser les données, à l’aide de graphiques et de statistiques. Enfin, nous avons rédigé un rapport en anglais présentant les résultats de notre analyse.",
+        imageUrl: "/images/projet-nutrition.jpg", 
+        tags: ["PostgreSQL", "R", "Analyse de données", "Visualisation", "Anglais"]
     },
     {
-      title: "Application de Recettes",
-      description: "Une application permettant de rechercher et sauvegarder des recettes de cuisine. Utilise une API externe pour récupérer les recettes et permet aux utilisateurs de créer leur propre livre de cuisine virtuel.",
-      imageUrl: "/images/projet-recettes.jpg", // Remplacez par le chemin réel
-      tags: ["JavaScript", "API", "LocalStorage"]
+        title: "Implémentation d’un besoin client et comparaison d’approches algorithmiques (2023-2024)",
+        description: "Ce projet, réalisé en binôme, portait sur la classification automatique d’articles de presse en cinq catégories (environnement-sciences, culture, économie, politique, sport). Dans une première partie, nous avons construit manuellement des lexiques à partir d’exemples d’articles, puis développé un programme en Java qui attribuait une catégorie à chaque article en fonction des scores calculés. Dans la seconde partie, nous avons automatisé la construction des lexiques grâce à une méthode d’apprentissage automatique basée sur l’analyse de fréquences et de spécificité des mots dans un fichier d’entraînement.",
+        imageUrl: "/images/projet-classification.jpg", 
+        tags: ["Java", "Traitement de texte", "Classification"]
+    },      
+    {
+        title: "Création d’une base de données (2023-2024)",
+        description: "Ce projet comporte plusieurs étapes visant à modéliser une base de données représentant le naufrage du Titanic, à justifier cette modélisation, à l’implémenter sous PostgreSQL, à réaliser des tests de conformité et à effectuer des requêtes d’analyse en binôme ou en groupe de trois. Elle m’a permis d’apprendre à concevoir un schéma entité-association (EA) à partir de données brutes, à le traduire en un schéma relationnel cohérent, à l’implémenter dans un système de gestion de base de données (SGBD) comme PostgreSQL, à écrire des requêtes SQL pour interroger la base et à vérifier l’intégrité des données via des tests.",
+        imageUrl: "/images/projet-bdd.jpg", 
+        tags: ["PostgreSQL", "SQL", "Modélisation", "Données", "Travail en groupe"]
+    }, 
+    {
+        title: "Installation d’un poste de développement (2023-2024)",
+        description: "Cette tâche implique l’installation de Debian 12 sur une machine virtuelle, suivie de l’installation de plusieurs logiciels. Voici ce que j’ai appris : l'installation de Debian et de logiciels (Git, JDK et IntelliJ IDEA Community), ce qui m’a permis de me familiariser avec des outils de gestion de paquets comme apt, snap et flatpak. La vérification de l’intégrité des fichiers avec SHA-512 checksums. La configuration de l’environnement utilisateur (login, langue, localisation...). Le principe des privilèges et l'utilisation de sudo.",
+        imageUrl: "/images/projet-debian.jpg", 
+        tags: ["Debian", "Shell", "Apt, Snap et Flatpak", "KDE/Plasma"]
     },
     {
-      title: "Jeu de Plateforme",
-      description: "Un petit jeu de plateforme développé avec JavaScript et Canvas. Le joueur peut sauter entre différentes plateformes et collecter des objets pour gagner des points.",
-      imageUrl: "/images/projet-jeu.jpg", // Remplacez par le chemin réel
-      tags: ["JavaScript", "Canvas", "Game Dev"]
-    }
+        title: "Analyse des besoins et découverte de l’environnement économique et écologique (2023-2024)",
+        description: "Nous avons commencé par une analyse des besoins en recueillant des informations sur l’entreprise Hardis Group, avec un focus sur sa démarche RSE. À partir de ces données, nous avons conçu une maquette de site web, que nous avons ensuite réalisée en HTML/CSS. Cette expérience, menée en groupe de quatre, nous a appris à travailler en équipe en répartissant les tâches selon nos compétences. Nous avons aussi développé nos compétences en communication, gestion de projet et développement web.",
+        imageUrl: "/images/projet-hardis.jpg", 
+        tags: ["HTML", "CSS", "Travail en équipe"]
+    },
+
+    
+         
+    
+        
+      
   ];
 
   return (
