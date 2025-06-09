@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nous Rejoindre</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Nous Rejoindre</h1>
+    <form action="traitement.php" method="post">
+        <article>
+             Nom: <input type="text" id="name" name="name" placeholder="Nom"required>
+             Prénom:<input type="text" id="name" name="name" placeholder="Prénom"required>
+        </article>
+
+        <article class="Mail">
+             Mail:<input type="email" id="email" name="email"placeholder="Mail" required>
+        </article>
+
+        <article class="date">
+            <label for="date"  class="date">Date de disponibilité:</label>
+            <input type="date" id="date" name="date" class="date" required>
+        </article>
+    <article class="status">
+        <article class="status1">
+            <article class="Etudiant">
+                <label for="Etudiant(e)">Etudiant(e)</label><br>
+                <input type="radio" id="Etudiant(e)" name="status" value="Etudiant(e)">
+            </article>
+            <article class="Employé">
+                <label for="Employé(e)">Employé(e)</label><br>
+                <input type="radio" id="Employé(e)" name="status" value="Employé(e)">
+            </article>
+        </article>
+        <article class="status2">
+            <article class="Indépendant">
+                <label for="Indépendant(e)">Indépendant(e)</label><br>
+                <input type="radio" id="Indépendant(e)" name="status" value="Indépendant(e)">
+            </article>
+            <article class="sans">
+                <label for="Sans emploi">Sans emploi</label><br>
+                <input type="radio" id="Sans emploi" name="status" value="Sans emploi">
+            </article>
+          </article>
+        </article>
+        <article class="objet">
+            <label for="Objet de candidature">Objet de candidature:</label>
+            <select id="Objet" name="Objet de candidature" required>
+                <option value="CDD">CDD</option>
+                <option value="CDI">CDI</option>
+                <option value="Stage">Stage</option>
+                <option value="Alternance">Alternance</option>
+                <option value="Formation">Formation</option>
+                <option value="Autres">Autres</option>
+            </select>
+        </article>
+        <article class="secteur">
+            <label for="Secteurs d'intérêt" class="intérêt">Secteurs d'intérêt:</label>
+            <select id="interests" name="Secteurs d'intérêt" class="saleforce" required>
+                <option value="Saleforce">Saleforce</option>
+                <option value="La Cyber sécurité">La Cyber sécurité</option>
+                <option value="Supply chain">Supply chain</option>
+                <option value="Cloud">Cloud</option>
+                <option value="Commerce/Vente">Commerce/Vente</option>
+                <option value="Pilotage de projet">Pilotage de projet</option>
+                <option value="Système réseaux BD">Système réseaux BD</option>
+            </select>
+                Autre(s) <input type="text" id="Autre" name="Secteurs d'intérêt">
+        </article>
+        <article class="motivations">
+            <label for="motivations">Vos motivations:</label>
+            <textarea id="motivations" name="motivations" required></textarea>
+        </article>
+        <section>
+           <label for="cv-upload" class="cv-label">
+ <div class="cv-button">Joindre votre CV</div>
+</label>
+<input type="file" id="cv-upload" class="cv-input">
+        </section>
+        <article>
+            <button type="submit">Envoyer</button>
+        </article>
+    </form>
+</body>
+</html>

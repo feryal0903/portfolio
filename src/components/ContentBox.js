@@ -2,8 +2,17 @@ import React, { useState } from 'react';
 import './ContentBox.css';
 
 // Composant pour les cases de projets
-export function ProjectCard({ title, description, imageUrl, tags }) {
+export function ProjectCard({ title, description, imageUrl, tags,downloadLink, downloadText }) {
   const [expanded, setExpanded] = useState(false);
+  const handleDownload = (e) => {
+    // Pour debug
+    console.log("Download clicked:", downloadLink);
+    
+    // Si c'est une page HTML, ouvrir dans un nouvel onglet
+    if (downloadLink.endsWith('.html')) {
+      window.open(downloadLink, '_blank');
+    }
+  };
 
   return (
     <div className="project-card">
@@ -34,6 +43,18 @@ export function ProjectCard({ title, description, imageUrl, tags }) {
           >
             {expanded ? 'Voir moins' : 'Voir plus'}
           </button>
+        )}
+        {downloadLink && (
+          <a 
+            href={downloadLink} 
+            className="download-button" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={handleDownload}
+            download={!downloadLink.endsWith('.html')}
+          >
+            {downloadText || 'Télécharger le document'}
+          </a>
         )}
       </div>
     </div>

@@ -1,0 +1,353 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+}
+header img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 50%; 
+    border-bottom: #227422 solid 2px;
+}
+header{
+    height: 500px;
+}
+
+/*header{
+    background-image: url(fond_h2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    height: 150px;
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    font-weight: 900;
+    color: white;
+    margin: 0px;
+
+}*/
+nav{
+    display: flex;
+    background-color: rgb(39,32,32);
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+}  
+nav form{
+    display: flex;
+    justify-content: end;
+}
+nav form input{
+    height: 35px;
+}
+nav form button{
+    height: 37px;
+    width: 30px;
+    padding: 0px;
+}
+nav form button img{
+    height: 37px;
+    width: 30px;
+    padding: 0px;
+}
+
+
+  
+nav form input[type=text] {
+    margin-top: 12px;
+    font-size: 17px;
+    border: none;
+}
+nav form button {
+    float: right;
+    margin-top: 12px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+nav form button:hover {
+    background: #ccc;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    
+}
+nav ul li a {
+    background-color: rgb(39,32,32);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 13px;
+    border-radius: 0px;
+    font-size: 1.2em ;
+
+}
+nav ul li a:hover {
+    background-color: #227422;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+nav img{
+    width: 90px; 
+    height: 45px; 
+    padding-top: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: left;
+}
+nav ul::after{
+    display: table;
+    clear: both;
+}
+.deroulant{
+    padding: 2px;
+}
+.sous{
+    display: none;
+    position: absolute;
+    width: 500px;
+}
+nav > ul li:hover .sous{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+.sous li{
+    width: 300px;
+    text-align: left;
+
+}
+.sous a{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0px;
+
+}
+.sous a:hover{
+    padding: 10px;
+}
+.deroulant > a::after{
+    content: "▼";
+}
+
+.sous a:hover{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 0px;
+}
+/*nav form ol{
+    display: none;
+}
+*/
+/*
+input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ input[type=text]:focus {
+   width: 70%;
+ }
+
+#list{
+  font-size:  1.5em;
+  margin-left: 90px;
+ }
+
+.hardis{
+ display: list-item;    
+} */
+body >article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #363636;
+
+}
+body> article button{
+    width: 150px;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(39, 32, 32);
+    background-color: #ccc;
+    border: 0px;
+    border-radius: 4px;
+
+
+}
+body> article button:hover{
+    width: 150px;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgb(39, 32, 32);
+    background-color: #227422;
+
+
+}
+
+body> article p{
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+body> section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: #363636;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+body > section p:first-child{
+    display: flex;
+    background-image: url(servicenb.jpg);
+    border-radius: 10px;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    color: #227422;
+    height: 500px;
+    width: 750px;
+
+}
+body > section p{
+    display: flex;
+    background-image: url(metbn.jpg);
+    border-radius: 10px;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+    color: #227422;
+    height: 500px;
+    width: 750px;
+
+}
+body > section p a{
+    display: flex;
+    align-items: end;
+    margin-left: 50px;
+    font-size: 0.5em;
+    font-weight: 600;
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body > section p a:hover{
+    display: flex;
+    align-items: end;
+    margin-left: 50px;
+    font-size: 0.5em;
+    font-weight: 600;
+    color: #227422;
+    padding: 0;
+    text-decoration: none;
+
+
+}
+
+footer{
+    background-color:rgb(39, 32, 32);
+    color: white;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    
+}
+footer article{
+    width: 500px;
+    height: 187px;
+}
+footer article aside{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+
+}
+footer article img{
+    background: color #080808;
+    width: 65px;
+    height: 65px;
+    margin-left:10px ;
+    margin-right:10px ;
+}
+footer article p{
+    margin-left: 15%;
+   
+}
+footer article p a{
+    color: #227422;
+}
+footer section ul {
+    list-style-type: none;
+}
+
+footer section ul li a:hover{
+    color:#227422
+}
+footer section{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    align-items: end;
+    gap: 25px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+footer section ul{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size:150%;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-left: #227422 solid 3px;
+}
+footer section ul li a{
+    color: white;
+    text-decoration: none;
+
+}
