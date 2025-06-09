@@ -65,7 +65,7 @@ function Projets() {
         title: "Analyse des besoins et découverte de l’environnement économique et écologique (2023-2024)",
         description: "Nous avons commencé par une analyse des besoins en recueillant des informations sur l’entreprise Hardis Group, avec un focus sur sa démarche RSE. À partir de ces données, nous avons conçu une maquette de site web, que nous avons ensuite réalisée en HTML/CSS. Cette expérience, menée en groupe de quatre, nous a appris à travailler en équipe en répartissant les tâches selon nos compétences. Nous avons aussi développé nos compétences en communication, gestion de projet et développement web.",
         tags: ["HTML", "CSS", "Travail en équipe"],
-        downloadLink: "/assets/C2-Hardis_group_site/text.html",
+        downloadLink: "portfolio/assets/C2-Hardis_group_site/text.html",
         downloadText: "Voir le site"
     },
 

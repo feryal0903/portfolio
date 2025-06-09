@@ -66,7 +66,24 @@ function APropos() {
         
           6 ans de danse classique<br />
           2 ans de handball<br />
-          Pratique actuelle de l'escalade depuis 3 ans<br />
+          Pratique actuelle de l'escalade depuis 3 ans<br /><a 
+          href="portfolio/assets/Escalade/Escalade.html"
+          className="sport-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-block',
+            marginTop: '1rem',
+            padding: '0.5rem 1rem',
+            background: 'linear-gradient(45deg, #D7462B 40%, #F77831 100%)',
+            color: '#F2D2A4',
+            textDecoration: 'none',
+            borderRadius: '20px',
+            fontFamily: 'Shrikhand, cursive, sans-serif',
+            fontSize: '0.9rem',
+            transition: 'all 0.3s ease'
+          }}
+        >Quiz 🧗‍♀️</a>
     
       </ContentSection>
       
