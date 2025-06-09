@@ -82,6 +82,7 @@ function APropos() {
             fontFamily: 'Shrikhand, cursive, sans-serif',
             fontSize: '0.9rem',
             transition: 'all 0.3s ease'
+            
           }}
         >Quiz 🧗‍♀️</a>
     
