@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+   }
+   
+   h1 {
+    color: white;
+    background-image: url("fond_h2.jpg");
+    text-align: center;
+    padding: 3%;
+    margin: 0px;
+
+   }
+   article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 20px;
+    gap: 7%;
+   }
+
+   section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 7%;
+    .cv-label {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+       }
+       
+       .cv-button {
+        display: inline-block;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+       }
+       
+       .cv-button:hover {
+        background-color: #45a049;
+       }
+       
+       .cv-input {
+        display: none;
+       }
+   }
+   
+   form {
+    margin-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+   }
+   
+   
+   
+   label {
+    margin-bottom: 5px;
+      width: 30vw;
+   }
+   
+   input, textarea, select {
+    width: 100%;
+    padding: 5px;
+   }
+   
+   button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+   }
+   
+   button:hover {
+    background-color: #45a049;
+   }
+
+.status1{
+    display: flex-start;
+    align-items: left;
+    justify-content: center;
+    flex-direction: row;
+}
+.status2{
+    display: flex-start;
+    align-items: right;
+    justify-content: center;
+    flex-direction: row;
+}
+.status{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type="radio" i] {
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 5px 5px 5px 5px;
+    padding: initial;
+    border: initial;
+}
+
+.objet{
+    gap: 4%;
+    justify-content: baseline;
+}
+
+.indépendant{
+    gap: 0%;
+}
+
+.secteur{
+    gap: 10%;
+}
+
+.motivations{
+    gap: 0%;
+}
+
+.Mail{
+    gap: 75px;
+}
+
+.intérêt-label{
+    margin-bottom: 5px;
+      width: 50vw;
+}
+#date{
+    gap: 0%;
+    border: solid 1px  #227422;
+    width: 1800px;
+}
+
+#interests{
+    border-color: #227422;
+    width: auto;
+}
+
+#Objet{
+    border-color: #227422;
+    width: 1530px;
+}
+
+#name{
+    border: solid 1px  #227422;
+}
+
+#email{
+    border: solid 1px  #227422;
+}
+
+#Autre{
+    border: solid 1px  #227422;
+}
+
+#motivations{
+    border: solid 1px  #227422;
+    width: 1255px;
+}

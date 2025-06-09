@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Times, Helvetica, sans-serif;
+}
+
+.welcome-screen,
+.question-screen,
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #778899;
+
+    background-image: url(escalade.jpg);
+
+    background-size: cover;
+    background-position-x: center;
+}
+
+.welcome-screen {
+    flex-direction: column;
+}
+
+.question-screen,
+.end-screen {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2E8B57	;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E8B57;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #555;
+}
+
+.end-screen span {
+    font-weight: bold;
+    color: #2F4F4F; /* Or any color you prefer for highlighting the house */
+}
